@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Faiz Fawad — Computer Science student, educator and technology enthusiast.">
+<meta name="theme-color" content="#101323">
+<title>Faiz Fawad | Resume & Portfolio</title>
+<style>
+:root{--bg:#0c1020;--surface:#141a2e;--surface2:#1b2340;--text:#edf1ff;--muted:#aab4d0;--line:#2b3555;--accent:#8b9cff;--accent2:#59d6c5;--shadow:0 24px 70px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#252653 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit}.progress{position:fixed;z-index:20;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+header{position:sticky;top:0;z-index:15;background:rgba(12,16,32,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}nav{max-width:1120px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;letter-spacing:-.05em;font-size:1.2rem}.brand span{color:var(--accent2)}.navlinks{display:flex;gap:24px;align-items:center}.navlinks a{font-size:.9rem;color:var(--muted)}.navlinks a:hover{color:var(--text)}.nav-actions{display:flex;gap:9px}.small-btn,.menu-btn{border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);padding:8px 12px;cursor:pointer}.menu-btn{display:none}
+main{max-width:1120px;margin:auto;padding:0 24px}.hero{min-height:590px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:60px;padding:86px 0 72px}.eyebrow,.tag{font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:var(--accent2)}h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.98;letter-spacing:-.075em;margin:18px 0}h1 span{color:var(--accent)}.lead{max-width:650px;font-size:1.12rem;color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;font-weight:750;border:1px solid var(--line)}.primary{background:linear-gradient(120deg,#788cff,#9d83ff);color:#101323;border:0}.secondary{background:var(--surface)}.hero-card{padding:28px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,rgba(139,156,255,.16),rgba(89,214,197,.06));box-shadow:var(--shadow)}.monogram{width:88px;height:88px;border-radius:24px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#101323;font-size:2rem;font-weight:900;letter-spacing:-.08em}.hero-card h2{font-size:1.45rem;letter-spacing:-.04em;margin:20px 0 5px}.hero-card p{color:var(--muted);margin:0}.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.stat{background:rgba(12,16,32,.38);border:1px solid var(--line);padding:13px;border-radius:13px}.stat strong{display:block;font-size:1.08rem}.stat small{color:var(--muted)}
+section{padding:74px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}.section-head h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.08;letter-spacing:-.065em;margin:8px 0 0}.section-head>p{max-width:430px;color:var(--muted);margin:0}.grid2,.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.panel,.card{background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:19px;padding:24px}.panel h3,.card h3{margin:7px 0;font-size:1.15rem}.panel p,.card p{color:var(--muted);margin:0}.card{transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:var(--accent)}.card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.pill{font-size:.72rem;color:var(--accent2);border:1px solid var(--line);border-radius:999px;padding:4px 9px}.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.chip{font-size:.86rem;color:#dce4ff;background:var(--surface2);border:1px solid var(--line);padding:7px 11px;border-radius:9px}
+.timeline{border-left:1px solid var(--accent);margin-left:8px;padding-left:25px}.timeline-item{position:relative;padding:0 0 26px}.timeline-item:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent2);left:-31px;top:9px;box-shadow:0 0 0 5px rgba(139,156,255,.13)}.timeline-item h3{margin:0}.timeline-item .meta{font-size:.86rem;color:var(--accent2)}.timeline-item p{color:var(--muted);margin:5px 0 0}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.filter{background:var(--surface);border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:7px 13px;cursor:pointer}.filter.active{background:var(--accent);color:#101323;border-color:var(--accent);font-weight:800}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:25px;background:linear-gradient(110deg,rgba(139,156,255,.16),rgba(89,214,197,.09));border:1px solid var(--line);padding:30px;border-radius:22px}.contact h2{font-size:2.2rem;letter-spacing:-.06em;margin:0}.contact p{color:var(--muted);margin:5px 0}.email{color:var(--accent2);font-weight:750;word-break:break-word}footer{max-width:1120px;margin:auto;padding:28px 24px 42px;color:var(--muted);font-size:.84rem;display:flex;justify-content:space-between;gap:12px}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}
+body.light{--bg:#f3f6fc;--surface:#fff;--surface2:#e9eef8;--text:#172039;--muted:#59657c;--line:#d9e0ee;--accent:#596edc;--accent2:#087f78;--shadow:0 20px 55px rgba(25,40,70,.1);background:radial-gradient(ellipse at 80% 0%,#e0e5ff 0,transparent 34%),var(--bg)}body.light header{background:rgba(243,246,252,.88)}body.light .stat{background:rgba(255,255,255,.7)}body.light .chip{color:#26334d}
+@media(max-width:800px){.hero{grid-template-columns:1fr;min-height:auto;gap:32px;padding:65px 0}.hero-card{max-width:550px}.section-head{display:block}.section-head>p{margin-top:12px}.contact{display:block}.contact .btn{margin-top:18px}}
+@media(max-width:650px){nav{padding:12px 18px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:61px;left:0;right:0;padding:16px 20px 20px;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.nav-actions{margin-left:auto}main{padding:0 18px}.grid2,.cards{grid-template-columns:1fr}section{padding:58px 0}.hero{padding:54px 0}.panel,.card{padding:20px}footer{padding:22px 18px 32px;display:block}footer span{display:block;margin-top:5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.card{transition:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header><nav aria-label="Main navigation">
+<a class="brand" href="#home">FF<span>.</span></a>
+<div class="navlinks" id="navlinks">
+<a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</div>
+<div class="nav-actions"><button class="small-btn" id="themeBtn" type="button" aria-label="Switch colour theme">☼ Theme</button><button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation" aria-expanded="false">☰</button></div>
+</nav></header>
+<main>
+<section class="hero" id="home" style="border:0">
+<div class="reveal">
+<div class="eyebrow">Computer Science · Education · Technology</div>
+<h1>Faiz <span>Fawad.</span></h1>
+<p class="lead">Computer Science student and educator with a strong interest in practical technology, problem-solving, and helping students build confidence through clear, structured learning.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn secondary" href="mailto:faiz.67490@iqra.edu.pk">✉ Contact me</a></div>
+</div>
+<aside class="hero-card reveal">
+<div class="monogram" aria-label="Faiz Fawad initials">FF</div>
+<h2>Learning. Building. Teaching.</h2>
+<p>Combining academic computing knowledge with hands-on teaching and project experience.</p>
+<div class="stat-grid">
+<div class="stat"><strong>BSCS</strong><small>Iqra University</small></div>
+<div class="stat"><strong>5 Years</strong><small>Teaching experience</small></div>
+<div class="stat"><strong>Technology</strong><small>Academic projects</small></div>
+<div class="stat"><strong>Education</strong><small>Academy leadership</small></div>
+</div>
+</aside>
+</section>
+
+<section id="about">
+<div class="section-head reveal"><div><div class="tag">01 / Profile</div><h2>Curious about technology.<br>Committed to people.</h2></div><p>I enjoy connecting technical learning with practical problem-solving and making difficult concepts easier to understand.</p></div>
+<div class="grid2">
+<article class="panel reveal"><div class="tag">Professional profile</div><h3>Educator & Computer Science student</h3><p>I lead and teach at Superior Tuition Academy, supporting students through structured lessons, concept explanation, academic guidance, and regular communication with parents.</p></article>
+<article class="panel reveal"><div class="tag">Working approach</div><h3>Clear, practical, student-focused</h3><p>My approach is to break complex topics into manageable steps, encourage questions, and connect theory with examples and practice.</p></article>
+</div>
+</section>
+
+<section id="education">
+<div class="section-head reveal"><div><div class="tag">02 / Education</div><h2>Academic foundation.</h2></div><p>Formal education and continued learning in computing and software development.</p></div>
+<div class="timeline reveal">
+<div class="timeline-item"><div class="meta">Undergraduate</div><h3>BS Computer Science — Iqra University</h3><p>Coursework and academic projects across programming, data structures, networking, databases, and artificial intelligence.</p></div>
+<div class="timeline-item"><div class="meta">Intermediate</div><h3>FDC College</h3><p>Intermediate education. Board and completion details can be added to the final CV if required.</p></div>
+<div class="timeline-item"><div class="meta">Matriculation</div><h3>Aga Khan Examination Board</h3><p>Secondary education.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<div class="section-head reveal"><div><div class="tag">03 / Technical skills</div><h2>Tools and technologies.</h2></div><p>Technologies used in coursework, practical exercises, and academic projects.</p></div>
+<div class="panel reveal">
+<h3>Programming & web</h3><div class="chips"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+<h3 style="margin-top:25px">Tools & platforms</h3><div class="chips"><span class="chip">VS Code</span><span class="chip">Git & GitHub</span><span class="chip">Packet Tracer</span><span class="chip">OpenCV</span><span class="chip">YOLOv8</span><span class="chip">SUMO</span><span class="chip">XAMPP</span><span class="chip">OpenCart</span></div>
+<h3 style="margin-top:25px">Professional strengths</h3><div class="chips"><span class="chip">Teaching & mentoring</span><span class="chip">Communication</span><span class="chip">Parent coordination</span><span class="chip">Problem-solving</span><span class="chip">Team collaboration</span><span class="chip">Presentation</span></div>
+</div>
+</section>
+
+<section id="experience">
+<div class="section-head reveal"><div><div class="tag">04 / Experience</div><h2>Experience through education.</h2></div><p>Teaching, academy operations, and supporting students' academic development.</p></div>
+<div class="timeline reveal">
+<div class="timeline-item"><div class="meta">Approximately 5 years · Karachi</div><h3>Founder / Instructor — Superior Tuition Academy</h3><p>Lead day-to-day academic activities, teach and guide students, coordinate with parents, support lesson and assessment preparation, and help maintain a positive learning environment.</p></div>
+<div class="timeline-item"><div class="meta">Academic and community involvement</div><h3>Student mentoring & academic support</h3><p>Prepare grade-appropriate learning material, explain concepts in accessible language, and help students strengthen understanding and confidence.</p></div>
+</div>
+</section>
+
+<section id="projects">
+<div class="section-head reveal"><div><div class="tag">05 / Selected projects</div><h2>Learning put into practice.</h2></div><p>Academic and practical work that demonstrates exposure to software, data, and applied computing.</p></div>
+<div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="ai">AI & data</button><button class="filter" data-filter="web">Web</button></div>
+<div class="cards">
+<article class="card reveal" data-category="ai"><div class="card-top"><span class="tag">AI / Computer vision</span><span class="pill">Academic project</span></div><h3>Traffic Light Management System</h3><p>Explored traffic monitoring and signal-management concepts using YOLOv8, OpenCV, Python, and SUMO simulation as part of an AI-focused project.</p><div class="chips"><span class="chip">Python</span><span class="chip">YOLOv8</span><span class="chip">OpenCV</span><span class="chip">SUMO</span></div></article>
+<article class="card reveal" data-category="ai"><div class="card-top"><span class="tag">Data analytics</span><span class="pill">Course project</span></div><h3>Customer Segmentation</h3><p>Worked with customer data and K-means clustering to explore segmentation, data preparation, and interpretation of groups.</p><div class="chips"><span class="chip">Python</span><span class="chip">K-means</span><span class="chip">Data analysis</span></div></article>
+<article class="card reveal" data-category="web"><div class="card-top"><span class="tag">Web / E-commerce</span><span class="pill">Practical demo</span></div><h3>OpenCart Store Demonstration</h3><p>Set up a local OpenCart environment using XAMPP and explored store configuration and theme structure for a teaching demonstration.</p><div class="chips"><span class="chip">OpenCart</span><span class="chip">PHP</span><span class="chip">XAMPP</span></div></article>
+</div>
+</section>
+
+<section id="certifications">
+<div class="section-head reveal"><div><div class="tag">06 / Certifications & achievements</div><h2>Growth and contribution.</h2></div><p>Verified credentials should be listed here as they are earned or confirmed.</p></div>
+<div class="grid2">
+<article class="panel reveal"><div class="tag">Certifications</div><h3>Certification record</h3><p>No independently verified certification details were provided for this draft. This section is reserved for certificates with confirmed titles, issuers, and dates.</p></article>
+<article class="panel reveal"><div class="tag">Achievements & leadership</div><h3>Academy leadership and student support</h3><p>Built teaching and communication experience through leading an academy, supporting learners, coordinating with parents, and organising academic activities.</p></article>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact reveal"><div><div class="tag">07 / Contact</div><h2>Let's connect.</h2><p>For academic collaboration, teaching opportunities, or professional enquiries:</p><p class="email">faiz.67490@iqra.edu.pk</p></div><a class="btn primary" href="mailto:faiz.67490@iqra.edu.pk">Send an email ↗</a></div>
+</section>
+</main>
+<footer><span>© <span id="year"></span> Faiz Fawad</span><span>Designed and developed with HTML, CSS & JavaScript.</span></footer>
+<script>
+const progress=document.getElementById('progress');
+function updateProgress(){const max=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(max>0?window.scrollY/max*100:0)+'%'}
+window.addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('themeBtn').addEventListener('click',()=>document.body.classList.toggle('light'));
+const menuBtn=document.getElementById('menuBtn'),navlinks=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
+navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}));
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('[data-category]').forEach(card=>{card.hidden=!(f==='all'||card.dataset.category===f)})}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
